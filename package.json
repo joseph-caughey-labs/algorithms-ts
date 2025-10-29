@@ -1,0 +1,37 @@
+{
+  "name": "algorithms-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Data structures, algorithms, tests, and benchmarks in TypeScript.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "vitest --watch",
+    "test": "vitest run",
+    "bench": "tsx src/bench/run.ts",
+    "lint": "eslint . --ext .ts --max-warnings=0",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "algorithms",
+    "data-structures",
+    "typescript",
+    "vitest",
+    "benchmark"
+  ],
+  "author": "Joey Caughey",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
